@@ -2,13 +2,11 @@ package de.felixschick.smarthomerestapi.sources;
 
 import de.felixschick.smarthomerestapi.sources.interfaces.iSmarthomeBridgeAPISource;
 import de.felixschick.smarthomerestapi.utils.XMLValueExtractor;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-@Service
-@Qualifier("homematic")
+@Component
 public class HomematicCCUBridgeSource implements iSmarthomeBridgeAPISource {
 
     @Value("${homematic.api.url}")

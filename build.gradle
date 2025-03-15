@@ -2,10 +2,12 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.4.3'
     id 'io.spring.dependency-management' version '1.1.7'
+    id("com.gradleup.shadow") version "9.0.0-beta10"
 }
 
 group = 'de.felixschick'
 version = '0.0.1-SNAPSHOT'
+
 
 java {
     toolchain {
@@ -24,6 +26,7 @@ repositories {
 }
 
 dependencies {
+    implementation("com.gradleup.shadow:com.gradleup.shadow.gradle.plugin:9.0.0-beta10")
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
