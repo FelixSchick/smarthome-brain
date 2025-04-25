@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'de.felixschick'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.2-SNAPSHOT'
 
 
 java {
@@ -39,7 +39,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.security:spring-security-config'
     implementation 'org.springframework.security:spring-security-web'
-    compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+    implementation group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
 
 }
 
